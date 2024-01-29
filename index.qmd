@@ -1,0 +1,25 @@
+---
+title: "Matt Barger"
+image: profile_picture.jpg
+about:
+  template: trestles
+  links:
+    - icon: twitter
+      href: https://twitter.com/MBarger13
+    - icon: linkedin
+      href: https://www.linkedin.com/in/matthewcbarger/
+    - icon: github
+      href: https://github.com/mattbarger
+    - icon: instagram
+      href: https://instagram.com/matty.barg
+---
+
+I am a data scientist in DC with way too many hobbies.
+
+For me, this site will serve a few purposes:
+
+-   A **passion project portfolio**, detailing work in soccer analytics and other topics,
+-   A **celebration of personal accomplishments**, be it my career, my golf game, or my personal life, and
+-   A **forward-facing journal** of what's going on in my life and how I'm feeling about it.
+
+If you would like to work with me, feel free to reach out to my e-mail or any of my socials.

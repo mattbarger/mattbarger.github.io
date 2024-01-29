@@ -1,0 +1,24 @@
+[
+  {
+    "listing": "/index.html",
+    "items": [
+      "/posts/welcome/SQD_intro.html",
+      "/posts/post-with-code/index.html"
+    ]
+  },
+  {
+    "listing": "/posts/welcome/index.html",
+    "items": []
+  },
+  {
+    "listing": "/posts/welcome/SQD_intro.html",
+    "items": []
+  },
+  {
+    "listing": "/posts.html",
+    "items": [
+      "/posts/welcome/SQD_intro.html",
+      "/posts/post-with-code/index.html"
+    ]
+  }
+]

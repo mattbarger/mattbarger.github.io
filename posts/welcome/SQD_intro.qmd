@@ -1,0 +1,15 @@
+---
+title: "Introducing SQD: Does Finishing Quality Matter?"
+author: "Matt Barger"
+date: "2024-01-20"
+categories: [soccer, analytics, methodology]
+image: "thumbnail.jpg"
+---
+
+## Takeaways
+This analysis will introduce the **Shot Quality Differential (SQD)** Metric, which measures the difference between a shot's starting quality (measured as xG) and finishing quality (PSxG). It will outline different ways to analyze the statistic
+
+## Research Question: How Much Does Shot Quality Matter?
+
+
+`

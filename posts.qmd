@@ -1,0 +1,15 @@
+---
+title: "Matt Writes it Out"
+listing:
+  contents: posts
+  sort: "date desc"
+  type: grid
+  categories: true
+  sort-ui: false
+  filter-ui: false
+page-layout: full
+---
+
+This section will deposit some of the ideas I have regarding my other passion, soccer analytics. Unless they're categorized as **stories**, consider most of this stuff as in-progress updates.
+
+Eventually I'll pin an idea board here to organize everything.

@@ -1,0 +1,27 @@
+project:
+  type: website
+
+website:
+  title: "Matt Barger"
+  navbar:
+    right:
+      - text: "Posts"
+        file: posts.qmd
+      - text: "Now"
+        file: now.qmd
+      - icon: github
+        href: https://github.com/mattbarger
+      - icon: twitter
+        href: https://twitter.com/MBarger13
+      - icon: linkedin
+        href: https://www.linkedin.com/in/matthewcbarger/
+      - icon: instagram
+        href: https://www.instagram.com/matty.barg/
+        
+format:
+  html:
+    theme: flatly
+    css: styles.css
+
+editor: visual
+
