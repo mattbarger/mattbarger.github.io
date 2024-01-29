@@ -1,0 +1,58 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Matt Barger",
+    "section": "",
+    "text": "For me, this site will serve a few purposes:\n\nA passion project portfolio, detailing work in soccer analytics and other topics,\nA celebration of personal accomplishments, be it my career, my golf game, or my personal life, and\nA forward-facing journal of what’s going on in my life and how I’m feeling about it.\n\nIf you would like to work with me, feel free to reach out to my e-mail or any of my socials."
+  },
+  {
+    "objectID": "now.html",
+    "href": "now.html",
+    "title": "The Now",
+    "section": "",
+    "text": "So this standing section will be a general reflection on what’s going in my life right now. Generally it’s a practice in mindfulness . For more information, this is a good explainer.Obligatory h/t to good friend and fellow blogger Tan Ho’s now page for my inspiration"
+  },
+  {
+    "objectID": "now.html#new-year-new-me-more-sustainable-goals",
+    "href": "now.html#new-year-new-me-more-sustainable-goals",
+    "title": "The Now",
+    "section": "New Year, New Me More Sustainable Goals",
+    "text": "New Year, New Me More Sustainable Goals\nJanuary is a natural goal-setting month. Like most people, I initially rushed to improve what I saw were the worst parts of myself.\nThen I reread that last sentence. Then I was sad.\nI once thought that the quickest way to self-improvement comes was a counterweight of self-loathing urgency. I don’t think it’s terribly uncommon. For me, it tends to sound like:\n\n“[Insert Unattainable Habit to Adopt] needs to happen IMMEDIATELY because everything is so awful!!!!!”\n\nIt works, but it is also absolutely exhausting: I’ve seen plenty of front-end improvement only to burn out easily and often.\nThrough this experience, I am beginning to learn that slow progress is lasting progress. More specifically, progress for me will require patiently re-framing my scarcity mindset, including:\n\naccepting how far I’ve come (I’m not starting from scratch. Everything is not awful.)\ncelebrating my growth and learning from my mistakes (In fact, everything is pretty good! I’ve accomplished a ton, including many mistakes.)\ntrusting myself to stay present and keep executing, leave the future for the future. (The opportunities I’m chasing will present themselves often. I trust myself to be as present as possible when they arrive.).\n\nSneaky re-frame: Mistakes are progress!So this year, I’m not throwing out the old me. I’m staying present with the current version of myself, and building toward the following milestones:\n\nRebuild Back to Full Strength, Physically and Financially\nMy knee injury from lifting was just judged not to need an MRI (yay!). More great news is that I’ve kept off the 20 pounds I lost last year during the recovery process. Looking for more, but staying patient and staying strong.\n\nFinancially I’m riding through some turbulence thanks to some early-year emergencies, but we’re getting back on track after an eventful 2023.\nKeep Building Upon Healthier Habits, and Fail Often\nNamely, I’m keeping my spaces clean and relatively uncluttered. We’re starting there and building out. I’m also developing the habit of writing every day, which leads to…\nGet That Portfolio Up!\nThat’s the point of this website. I’ve been sitting on serious soccer analysis for years, but I’ve struggled to keep the ideas in my head because life is busy. Dedicating more time to documenting my process will be important and helpful. We’ll see how it goes!"
+  },
+  {
+    "objectID": "now.html#other-things-im-doing",
+    "href": "now.html#other-things-im-doing",
+    "title": "The Now",
+    "section": "Other Things I’m Doing",
+    "text": "Other Things I’m Doing\n\nPlanning Golf Trips\n I’d love to get back to the American Soccer Golf Tour this year. Current candidates are as follows, suggestions welcome:Find me on social media and feel free to DM course suggestions!\nCharleston, SC - Kiawah Island is a must for any golfer, and a Charleston Battery match seems like a must for any soccer historian.\nRaleigh, NC - Tobacco Road is a must and I have to see if the NC Courage are a bigger draw than NCFC.\nLouisville, KY - Renting hickory clubs and traveling back in time, then heading to a Lou City or Racing Louisville match. By the way, Racing Louisville’s houndstooth kit is absolute 🔥🔥🔥.\nAtlanta, GA - The soccer nerd vibes at a packed ATL United Game have been on the list since I saw the Footie Mob for the first time. Course suggestions are welcome.\n\n\nCurrent Mood: 😖▶️🙃\nAnnoyed, but confident. I’ve been dealing with some early-year emergencies lately (nothing I’ll get into here). However, I’m pretty proud of my response so far. Upon reflection, I want to be able to handle my stress while being able to function clearly. And if I can’t, I want to be able to confront what or who is bothering me head-on, while remaining composed and affable.\nTrying to be patient as possible: the problems remain stubborn and will likely stay problems for the next few months.\nThere will always be problems. I can control what I can control, and I can control my response to the things I can’t control."
+  },
+  {
+    "objectID": "posts/post-with-code/index.html",
+    "href": "posts/post-with-code/index.html",
+    "title": "Post With Code",
+    "section": "",
+    "text": "1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "posts/welcome/SQD_intro.html",
+    "href": "posts/welcome/SQD_intro.html",
+    "title": "Introducing SQD: Does Finishing Quality Matter?",
+    "section": "",
+    "text": "This analysis will introduce the Shot Quality Differential (SQD) Metric, which measures the difference between a shot’s starting quality (measured as xG) and finishing quality (PSxG). It will outline different ways to analyze the statistic"
+  },
+  {
+    "objectID": "posts/welcome/SQD_intro.html#research-question-how-much-does-shot-quality-matter",
+    "href": "posts/welcome/SQD_intro.html#research-question-how-much-does-shot-quality-matter",
+    "title": "Introducing SQD: Does Finishing Quality Matter?",
+    "section": "Research Question: How Much Does Shot Quality Matter?",
+    "text": "Research Question: How Much Does Shot Quality Matter?\n`"
+  },
+  {
+    "objectID": "posts.html",
+    "href": "posts.html",
+    "title": "Matt Writes it Out",
+    "section": "",
+    "text": "Eventually I’ll pin an idea board here to organize everything.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIntroducing SQD: Does Finishing Quality Matter?\n\n\n\nsoccer\n\n\nanalytics\n\n\nmethodology\n\n\n\n\n\n\n\nMatt Barger\n\n\nJan 20, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPost With Code\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\nHarlow Malloc\n\n\nJan 15, 2024\n\n\n\n\n\n\n\n\nNo matching items"
+  }
+]
