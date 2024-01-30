@@ -1,10 +1,31 @@
 [
   {
+    "objectID": "posts/post-with-code/index.html",
+    "href": "posts/post-with-code/index.html",
+    "title": "Post With Code",
+    "section": "",
+    "text": "This is a post with executable code.\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "posts/welcome/SQD_intro.html",
+    "href": "posts/welcome/SQD_intro.html",
+    "title": "Introducing SQD: Does Finishing Quality Matter?",
+    "section": "",
+    "text": "This analysis will introduce the Shot Quality Differential (SQD) Metric, which measures the difference between a shot’s starting quality (measured as xG) and finishing quality (PSxG). It will outline different ways to analyze the statistic"
+  },
+  {
+    "objectID": "posts/welcome/SQD_intro.html#research-question-how-much-does-shot-quality-matter",
+    "href": "posts/welcome/SQD_intro.html#research-question-how-much-does-shot-quality-matter",
+    "title": "Introducing SQD: Does Finishing Quality Matter?",
+    "section": "Research Question: How Much Does Shot Quality Matter?",
+    "text": "Research Question: How Much Does Shot Quality Matter?\n`"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Matt Barger",
     "section": "",
-    "text": "For me, this site will serve a few purposes:\n\nA passion project portfolio, detailing work in soccer analytics and other topics,\nA celebration of personal accomplishments, be it my career, my golf game, or my personal life, and\nA forward-facing journal of what’s going on in my life and how I’m feeling about it.\n\nIf you would like to work with me, feel free to reach out to my e-mail or any of my socials."
+    "text": "I am a data scientist in DC with way too many hobbies.\nFor me, this site will serve a few purposes:\n\nA passion project portfolio, detailing work in soccer analytics and other topics,\nA celebration of personal accomplishments, be it my career, my golf game, or my personal life, and\nA forward-facing journal of what’s going on in my life and how I’m feeling about it.\n\nIf you would like to work with me, feel free to reach out to my e-mail or any of my socials."
   },
   {
     "objectID": "now.html",
@@ -28,31 +49,10 @@
     "text": "Other Things I’m Doing\n\nPlanning Golf Trips\n I’d love to get back to the American Soccer Golf Tour this year. Current candidates are as follows, suggestions welcome:Find me on social media and feel free to DM course suggestions!\nCharleston, SC - Kiawah Island is a must for any golfer, and a Charleston Battery match seems like a must for any soccer historian.\nRaleigh, NC - Tobacco Road is a must and I have to see if the NC Courage are a bigger draw than NCFC.\nLouisville, KY - Renting hickory clubs and traveling back in time, then heading to a Lou City or Racing Louisville match. By the way, Racing Louisville’s houndstooth kit is absolute 🔥🔥🔥.\nAtlanta, GA - The soccer nerd vibes at a packed ATL United Game have been on the list since I saw the Footie Mob for the first time. Course suggestions are welcome.\n\n\nCurrent Mood: 😖▶️🙃\nAnnoyed, but confident. I’ve been dealing with some early-year emergencies lately (nothing I’ll get into here). However, I’m pretty proud of my response so far. Upon reflection, I want to be able to handle my stress while being able to function clearly. And if I can’t, I want to be able to confront what or who is bothering me head-on, while remaining composed and affable.\nTrying to be patient as possible: the problems remain stubborn and will likely stay problems for the next few months.\nThere will always be problems. I can control what I can control, and I can control my response to the things I can’t control."
   },
   {
-    "objectID": "posts/post-with-code/index.html",
-    "href": "posts/post-with-code/index.html",
-    "title": "Post With Code",
-    "section": "",
-    "text": "1 + 1\n\n[1] 2"
-  },
-  {
-    "objectID": "posts/welcome/SQD_intro.html",
-    "href": "posts/welcome/SQD_intro.html",
-    "title": "Introducing SQD: Does Finishing Quality Matter?",
-    "section": "",
-    "text": "This analysis will introduce the Shot Quality Differential (SQD) Metric, which measures the difference between a shot’s starting quality (measured as xG) and finishing quality (PSxG). It will outline different ways to analyze the statistic"
-  },
-  {
-    "objectID": "posts/welcome/SQD_intro.html#research-question-how-much-does-shot-quality-matter",
-    "href": "posts/welcome/SQD_intro.html#research-question-how-much-does-shot-quality-matter",
-    "title": "Introducing SQD: Does Finishing Quality Matter?",
-    "section": "Research Question: How Much Does Shot Quality Matter?",
-    "text": "Research Question: How Much Does Shot Quality Matter?\n`"
-  },
-  {
     "objectID": "posts.html",
     "href": "posts.html",
     "title": "Matt Writes it Out",
     "section": "",
-    "text": "Eventually I’ll pin an idea board here to organize everything.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIntroducing SQD: Does Finishing Quality Matter?\n\n\n\nsoccer\n\n\nanalytics\n\n\nmethodology\n\n\n\n\n\n\n\nMatt Barger\n\n\nJan 20, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPost With Code\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\nHarlow Malloc\n\n\nJan 15, 2024\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "This section will deposit some of the ideas I have regarding my other passion, soccer analytics. Unless they’re categorized as stories, consider most of this stuff as in-progress updates.\nEventually I’ll pin an idea board here to organize everything.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIntroducing SQD: Does Finishing Quality Matter?\n\n\n\nsoccer\n\n\nanalytics\n\n\nmethodology\n\n\n\n\n\n\n\nMatt Barger\n\n\nJan 20, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLet’s Test This\n\n\n\ngolf\n\n\n\n\n\n\n\nMatt Barger\n\n\nJan 15, 2024\n\n\n\n\n\n\n\n\nNo matching items"
   }
 ]
