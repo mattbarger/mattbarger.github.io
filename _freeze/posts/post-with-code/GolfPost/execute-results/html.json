@@ -1,0 +1,14 @@
+{
+  "hash": "4ce5a2a1e2c1a26d11c124d53b96bb98",
+  "result": {
+    "markdown": "---\ntitle: \"Round Review: Langston, 27 Jan\"\nauthor: \"Matt Barger\"\ndate: \"2024-01-29\"\ncategories: [golf]\nimage: \"image.jpg\"\n---\n\n\nI need to start logging more of my golf rounds. This is that.\n\n\n::: {.cell}\n\n```{.r .cell-code}\n1 + 1\n```\n\n::: {.cell-output .cell-output-stdout}\n```\n[1] 2\n```\n:::\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
