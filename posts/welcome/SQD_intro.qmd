@@ -4,12 +4,42 @@ author: "Matt Barger"
 date: "2024-01-20"
 categories: [soccer, analytics, methodology]
 image: "thumbnail.jpg"
+from: markdown+emoji
+reference-location: margin
+citation-location: margin
 ---
 
-## Takeaways
-This analysis will introduce the **Shot Quality Differential (SQD)** Metric, which measures the difference between a shot's starting quality (measured as xG) and finishing quality (PSxG). It will outline different ways to analyze the statistic
+# xG is only half the battle.
 
-## Research Question: How Much Does Shot Quality Matter?
+In soccer, we have two metrics to judge a shot's potential: xG (the one we all know) and post-shot xG (the one we don't). To put it simply:
 
+-   [**Expected Goals (xG)**]{.underline} measures a shot's probability of scoring based on the ***various factors leading up to the shot***. [xG = *how good was the setup?*]{.aside}
+-   [**Post-Shot Expected Goals (PSxG)**]{.underline} measures a shot's probability of scoring given the ***position of the shot in the goalmouth***. [PSxG = *how good was the finish?*]{.aside}
 
-`
+[xG is a headline statistic]{.underline} used to measure the both the attacking quality and the defensive quality of teams. You can find xG on most league tables on major statistics sites.
+
+On the other hand, [PSxG is a backpage afterthought]{.underline}. It has been proven useful to identify well-performing goalkeepers, but that relegates it to the backpage of FBREF.
+
+We can do better than this.
+
+# Research Question: Can We Use xG and PSxG to isolate attacking tendencies?
+
+Let's grab some data. We're grabbing every shot from every game over the last three full seasons as well as the in-progress 2023/24 season from FBREF. [:100: :raised_hands: :fire: to Jase Zivkovic and Tony El-Habr for their updates to [the `worldfootballR` package](https://github.com/JaseZiv/worldfootballR). They've condensed a literal days-long data scraping process into about 30 seconds of compiling. Fantastic work, fellas!]{.aside}
+
+```{r message = F, warning = F}
+library(tidyverse)
+library(worldfootballR)
+
+### Every shot from every match of the top 5 European leagues
+shots_top5 <- load_fb_match_shooting(
+  country = c('ENG','GER','ESP','ITA','FRA'),
+  gender = 'M',
+  tier = '1st',
+  season_end_year = 2021:2024
+)
+
+```
+
+Let's isolate the shooting from a single match. In this case
+
+``` {r}

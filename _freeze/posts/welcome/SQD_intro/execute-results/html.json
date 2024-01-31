@@ -1,0 +1,14 @@
+{
+  "hash": "da890949a2494f5ba589b8c16ab149a2",
+  "result": {
+    "markdown": "---\ntitle: \"Introducing SQD: Does Finishing Quality Matter?\"\nauthor: \"Matt Barger\"\ndate: \"2024-01-20\"\ncategories: [soccer, analytics, methodology]\nimage: \"thumbnail.jpg\"\nfrom: markdown+emoji\nreference-location: margin\ncitation-location: margin\n---\n\n\n# xG is only half the battle.\n\nIn soccer, we have two metrics to judge a shot's potential: xG (the one we all know) and post-shot xG (the one we don't). To put it simply:\n\n-   [**Expected Goals (xG)**]{.underline} measures a shot's probability of scoring based on the ***various factors leading up to the shot***. [xG = *how good was the setup?*]{.aside}\n-   [**Post-Shot Expected Goals (PSxG)**]{.underline} measures a shot's probability of scoring given the ***position of the shot in the goalmouth***. [PSxG = *how good was the finish?*]{.aside}\n\n[xG is a headline statistic]{.underline} used to measure the both the attacking quality and the defensive quality of teams. You can find xG on most league tables on major statistics sites.\n\nOn the other hand, [PSxG is a backpage afterthought]{.underline}. It has been proven useful to identify well-performing goalkeepers, but that relegates it to the backpage of FBREF.\n\nWe can do better than this.\n\n# Research Question: Can We Use xG and PSxG to isolate attacking tendencies?\n\nLet's grab some data. We're grabbing every shot from every game over the last three full seasons as well as the in-progress 2023/24 season from FBREF. [:100: :raised_hands: :fire: to Jase Zivkovic and Tony El-Habr for their updates on [the `worldfootballR` package](https://github.com/JaseZiv/worldfootballR). They've condensed literal days-long data scraping process into about 30 seconds of compiling. Fantastic work, fellas!]{.aside}\n\n\n::: {.cell}\n\n```{.r .cell-code}\nlibrary(tidyverse)\nlibrary(worldfootballR)\n\n### Every shot from every match of the top 5 European leagues\nshots_top5 <- load_fb_match_shooting(\n  country = c('ENG','GER','ESP','ITA','FRA'),\n  gender = 'M',\n  tier = '1st',\n  season_end_year = 2021:2024\n)\n```\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
