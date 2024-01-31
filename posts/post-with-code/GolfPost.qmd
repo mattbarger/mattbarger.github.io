@@ -6,8 +6,37 @@ categories: [golf]
 image: "image.jpg"
 ---
 
-I need to start logging more of my golf rounds. This is that.
+Here's my first attempt to load golf rounds in to a Quarto blog. Mostly it's an excuse to journal further about my golf game.
+
+```{r message = F, warning = F, echo = F}
+library(tidyverse)
+library(janitor)
+library(gt)
+```
+
+A few notes about the round:
+
+```{r message = F}
+## Round Notes
+Course <- "Langston GC"
+Round_DateTime <- as.POSIXct('2024-01-27 09:20:00 EST')
+Tees <- "White"       # The longest available for the day.
+Slope     <- 115      # Generally a pretty easy slope, but conditions made it play worse
+Rating    <- 68.6     # Also a generally easy rating
+PC_coeff  <- 3        # Unofficial. The course was in shocking condition after the snow-melt.
+
+
+
+#Loading in the scorecard:
+scorecard <- read_csv('scorecard_20240127_langston.csv') |>
+  clean_names()
+
+Adjusted_Par <- round(18.3 * Slope/113 + Rating) + PC_coeff
+Course_Handicap <- Adjusted_Par - sum(scorecard$par)
+```
 
 ```{r}
-1 + 1
+
+
+
 ```
