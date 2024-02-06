@@ -123,7 +123,7 @@ cooked <- st5 |>
     subtr_value = sum(psxg != 0 & psxg <= xg),
     added_value = sum(psxg != 0 & psxg > xg)
   ) |>
-  filter(shots >= 25) |>
+  filter(shots >= 15) |>
   left_join(season_wide_averages) |>
   mutate(across(goals_avg:added_value_avg, ~round(.x * shots *100)/100),
          goals_diff = goals - xG,
@@ -133,31 +133,43 @@ cooked <- st5 |>
          added_value_pct = added_value/shots,
          ot_ppdiff = 100 * (off_target_pct - (miss_target_avg/shots)),
          added_value_ppdiff = 100 * (added_value_pct-(added_value_avg/shots))) |>
-  arrange(added_value_ppdiff) |> filter(season_end_year == 2023) 
+  arrange(added_value_ppdiff)
+
+lm_model <- lm(goals_diff ~ added_value_diff, data = cooked)
 
 ggplot(cooked, aes(y = goals_diff, x = added_value_diff)) +
-  geom_point() +
+  geom_point(alpha = 0.05) +
+  geom_point(data = cooked |> dplyr::filter(stringr::str_detect(player, "Dejan Kulusevski")), size = 5) +
+  stat_smooth(method = "lm", color = "blue", formula = y ~ x, method.args = list()) +
+  ggrepel::geom_text_repel(data = cooked |> dplyr::filter(stringr::str_detect(player, "Dejan Kulusevski")),
+                           aes(label = paste(squad, season_end_year, sep = " - "))) +
   geom_vline(xintercept = 0) +
   geom_hline(yintercept = 0) +
-  geom_smooth(method = "lm", se = FALSE) +
   # Add any other customization or labels as needed
   labs(
-    title = "Scatter Plot with Regression Line",
-    x = "Goals Difference",
-    y = "Added Value Difference"
+    title = paste(cooked |> filter(str_detect(player, "Dejan Kulusevski")) |> ungroup() |> select(player) |> distinct() |> unlist() |> as.vector(), "Striking with Expectation", sep = " - "),
+    subtitle = "sample limited to those with > 15 shots, seasons 2021-2024",
+    y = "How many more goals (Goals - xG) than expected",
+    x = "How many more added-value shots (PSxG > xG) than expected"
   ) +
-  # Fit linear model
-  geom_smooth(method = "lm", se = FALSE, color = "blue") +
-  # Display summary statistics
+  # Display equation coefficients
   annotate(
     "text",
-    x = Inf,
-    y = -Inf,
+    x = 20,
+    y = 10,
     hjust = 1,
     vjust = 0,
-    label = paste("R-squared =", round(summary(lm(goals_diff ~ added_value_diff, data = cooked))$r.squared, 3))
+    label = paste("Equation: [goals above expected] =", round(coef(lm_model)[1], 3), "+", round(coef(lm_model)[2], 3), "* [good shots above expected]")
+  ) +
+  # Display R-squared
+  annotate(
+    "text",
+    x = 20,
+    y = 9.75,
+    hjust = 1,
+    vjust = 1,
+    label = paste("R-squared =", round(summary(lm_model)$r.squared, 3))
   )
-  
 
 
 st5 |> 
