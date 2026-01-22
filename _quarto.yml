@@ -26,7 +26,7 @@ format:
     typography:
       base: Inter
       headings: Inter
-      monospace: Space Mono
+      monospace: Fira Mono
 
 editor: visual
 
