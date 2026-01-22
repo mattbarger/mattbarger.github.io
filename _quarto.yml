@@ -9,7 +9,7 @@ website:
       - text: "Posts"
         file: posts.qmd
       - text: "Now"
-        file: now.qmd
+        file: now2024-01-29.qmd
       - text: '{{< fa brands github >}}'
         href: https://github.com/mattbarger
       - text: '{{< fa brands bluesky >}}'
