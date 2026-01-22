@@ -22,8 +22,9 @@ format:
     theme: 
       dark: darkly
       light: flatly
-    include-in-header: fonts.html
     sass: styles.scss
+    include-in-header: fonts.html
+    
 
 editor: visual
 
