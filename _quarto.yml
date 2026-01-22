@@ -23,6 +23,7 @@ format:
     theme: 
       dark: darkly
       light: flatly
+    css: styles.css
     typography:
       base: Inter
       headings: Inter
