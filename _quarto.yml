@@ -2,7 +2,6 @@ project:
   type: website
   output-dir: docs
 
-brand: _brand.yml
 
 website:
   title: "Matt Barger"
@@ -24,11 +23,7 @@ format:
       dark: darkly
       light: flatly
     include-in-header: fonts.html
-    css: styles.css
-    typography:
-      base: Inter
-      headings: Inter
-      monospace: Fira Mono
+    sass: styles.scss
 
 editor: visual
 
