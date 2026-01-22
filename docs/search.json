@@ -1,17 +1,10 @@
 [
   {
-    "objectID": "posts/post-with-code/GolfPost.html",
-    "href": "posts/post-with-code/GolfPost.html",
-    "title": "Round Review: Langston, 27 Jan",
+    "objectID": "posts.html",
+    "href": "posts.html",
+    "title": "Matt Writes it Out",
     "section": "",
-    "text": "Here’s my first attempt to load golf rounds in to a Quarto blog. Mostly it’s an excuse to journal further about my golf game.\n\n\n\nA few notes about the round:\n\n## Round Notes\nCourse <- \"Langston GC\"\nRound_DateTime <- as.POSIXct('2024-01-27 09:20:00 EST')\nTees <- \"White\"       # The longest available for the day.\nSlope     <- 115      # Generally a pretty easy slope, but conditions made it play worse\nRating    <- 68.6     # Also a generally easy rating\nPC_coeff  <- 3        # Unofficial. The course was in shocking condition after the snow-melt.\n\n\n#Loading in the scorecard:\nscorecard <- read_csv('scorecard_20240127_langston.csv')\n\nprint(scorecard, n = 18)\n\n# A tibble: 18 × 12\n    Hole   Par Yardage Handicap Score Putts Partials Fulls `Tee Direction`\n   <dbl> <dbl>   <dbl>    <dbl> <dbl> <dbl>    <dbl> <dbl> <chr>          \n 1     1     5     465       10     6     3        0     3 Left Miss      \n 2     2     4     376        9     5     2        1     2 Hit            \n 3     3     5     492        1     6     2        1     3 Right Miss     \n 4     4     3     157       16     3     2        0     1 Hit            \n 5     5     4     350       17     4     2        0     2 Right Miss     \n 6     6     4     358       12     5     2        1     2 Right Miss     \n 7     7     4     328       18     5     2        1     2 Hit            \n 8     8     3     194        8     3     1        1     1 Short Miss     \n 9     9     4     388        5     5     2        1     2 Hit            \n10    10     5     438        6     5     3        0     2 Right Miss     \n11    11     4     383       14     7     3        1     3 Right Miss     \n12    12     4     412        3     5     2        1     2 Right Miss     \n13    13     3     152       11     3     2        0     1 Hit            \n14    14     4     305       15     5     3        0     2 Hit            \n15    15     3     170        7     3     1        1     1 Short Miss     \n16    16     5     508        2     7     2        1     3 Right Miss     \n17    17     4     340       13     5     2        1     2 Right Miss     \n18    18     4     345        4     5     2        1     2 Right Miss     \n# ℹ 3 more variables: `Drops from Tee` <dbl>, `Drops from Approach` <dbl>,\n#   `Drop from Partial` <dbl>"
-  },
-  {
-    "objectID": "posts/welcome/SQD_intro.html",
-    "href": "posts/welcome/SQD_intro.html",
-    "title": "Introducing SQD: Does Finishing Quality Matter?",
-    "section": "",
-    "text": "xG is only half the battle.\nIn soccer, we have two metrics to judge a shot’s potential: xG (the one we all know) and post-shot xG (the one we don’t). To put it simply:\n\nExpected Goals (xG) measures a shot’s probability of scoring based on the various factors leading up to the shot. \nPost-Shot Expected Goals (PSxG) measures a shot’s probability of scoring given the position of the shot in the goalmouth. \n\nxG = how good was the setup?PSxG = how good was the finish?xG is a headline statistic used to measure the both the attacking quality and the defensive quality of teams. You can find xG on most league tables on major statistics sites.\nOn the other hand, PSxG is a backpage afterthought. It has been proven useful to identify well-performing goalkeepers, but that relegates it to the backpage of FBREF.\nWe can do better than this.\n\n\nResearch Question: Can We Use xG and PSxG to isolate attacking tendencies?\nLet’s grab some data. We’re grabbing every shot from every game over the last three full seasons as well as the in-progress 2023/24 season from FBREF. 💯 🙌 🔥 to Jase Zivkovic and Tony El-Habr for their updates on the worldfootballR package. They’ve condensed literal days-long data scraping process into about 30 seconds of compiling. Fantastic work, fellas!\n\nlibrary(tidyverse)\nlibrary(worldfootballR)\n\n### Every shot from every match of the top 5 European leagues\nshots_top5 <- load_fb_match_shooting(\n  country = c('ENG','GER','ESP','ITA','FRA'),\n  gender = 'M',\n  tier = '1st',\n  season_end_year = 2021:2024\n)"
+    "text": "This section will deposit some of the ideas I have regarding my other passion, soccer analytics. Unless they’re categorized as stories, consider most of this stuff as in-progress updates.\nEventually I’ll pin an idea board here to organize everything.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRound Review: Langston, 27 Jan\n\n\n\ngolf\n\n\n\n\n\n\n\nMatt Barger\n\n\nJan 29, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\nIntroducing SQD: Does Finishing Quality Matter?\n\n\n\nsoccer\n\nanalytics\n\nmethodology\n\n\n\n\n\n\n\nMatt Barger\n\n\nJan 20, 2024\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "index.html",
@@ -21,8 +14,29 @@
     "text": "Hi, I’m Matt. This is my website.\nWe’re under construction, but soccer content on the way."
   },
   {
+    "objectID": "posts/post-with-code/GolfPost.html",
+    "href": "posts/post-with-code/GolfPost.html",
+    "title": "Round Review: Langston, 27 Jan",
+    "section": "",
+    "text": "Here’s my first attempt to load golf rounds in to a Quarto blog. Mostly it’s an excuse to journal further about my golf game.\nA few notes about the round:\n\n## Round Notes\nCourse &lt;- \"Langston GC\"\nRound_DateTime &lt;- as.POSIXct('2024-01-27 09:20:00 EST')\nTees &lt;- \"White\"       # The longest available for the day.\nSlope     &lt;- 115      # Generally a pretty easy slope, but conditions made it play worse\nRating    &lt;- 68.6     # Also a generally easy rating\nPC_coeff  &lt;- 3        # Unofficial. The course was in shocking condition after the snow-melt.\n\n\n#Loading in the scorecard:\nscorecard &lt;- read_csv('scorecard_20240127_langston.csv')\n\nprint(scorecard, n = 18)\n\n# A tibble: 18 × 12\n    Hole   Par Yardage Handicap Score Putts Partials Fulls `Tee Direction`\n   &lt;dbl&gt; &lt;dbl&gt;   &lt;dbl&gt;    &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;    &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt;          \n 1     1     5     465       10     6     3        0     3 Left Miss      \n 2     2     4     376        9     5     2        1     2 Hit            \n 3     3     5     492        1     6     2        1     3 Right Miss     \n 4     4     3     157       16     3     2        0     1 Hit            \n 5     5     4     350       17     4     2        0     2 Right Miss     \n 6     6     4     358       12     5     2        1     2 Right Miss     \n 7     7     4     328       18     5     2        1     2 Hit            \n 8     8     3     194        8     3     1        1     1 Short Miss     \n 9     9     4     388        5     5     2        1     2 Hit            \n10    10     5     438        6     5     3        0     2 Right Miss     \n11    11     4     383       14     7     3        1     3 Right Miss     \n12    12     4     412        3     5     2        1     2 Right Miss     \n13    13     3     152       11     3     2        0     1 Hit            \n14    14     4     305       15     5     3        0     2 Hit            \n15    15     3     170        7     3     1        1     1 Short Miss     \n16    16     5     508        2     7     2        1     3 Right Miss     \n17    17     4     340       13     5     2        1     2 Right Miss     \n18    18     4     345        4     5     2        1     2 Right Miss     \n# ℹ 3 more variables: `Drops from Tee` &lt;dbl&gt;, `Drops from Approach` &lt;dbl&gt;,\n#   `Drop from Partial` &lt;dbl&gt;"
+  },
+  {
+    "objectID": "posts/welcome/SQD_intro.html",
+    "href": "posts/welcome/SQD_intro.html",
+    "title": "Introducing SQD: Does Finishing Quality Matter?",
+    "section": "",
+    "text": "xG is only half the battle.\nIn soccer, we have two metrics to judge a shot’s potential: xG (the one we all know) and post-shot xG (the one we don’t). To put it simply:\n\nExpected Goals (xG) measures a shot’s probability of scoring based on the various factors leading up to the shot. \nPost-Shot Expected Goals (PSxG) measures a shot’s probability of scoring given the position of the shot in the goalmouth. \n\nxG = how good was the setup?PSxG = how good was the finish?xG is a headline statistic used to measure the both the attacking quality and the defensive quality of teams. You can find xG on most league tables on major statistics sites.\nOn the other hand, PSxG is a backpage afterthought. It has been proven useful to identify well-performing goalkeepers, but that relegates it to the backpage of FBREF.\nWe can do better than this.\n\n\nResearch Question: Can We Use xG and PSxG to isolate attacking tendencies?\nLet’s grab some data. We’re grabbing every shot from every game over the last three full seasons as well as the in-progress 2023/24 season from FBREF. 💯 🙌 🔥 to Jase Zivkovic and Tony El-Habr for their updates on the worldfootballR package. They’ve condensed literal days-long data scraping process into about 30 seconds of compiling. Fantastic work, fellas!\n\nlibrary(tidyverse)\nlibrary(worldfootballR)\n\n### Every shot from every match of the top 5 European leagues\nshots_top5 &lt;- load_fb_match_shooting(\n  country = c('ENG','GER','ESP','ITA','FRA'),\n  gender = 'M',\n  tier = '1st',\n  season_end_year = 2021:2024\n)"
+  },
+  {
     "objectID": "now2024-01-29.html",
     "href": "now2024-01-29.html",
+    "title": "The Now",
+    "section": "",
+    "text": "So this standing section will be a general reflection on what’s going in my life right now. Generally it’s a practice in mindfulness . For more information, this is a good explainer.Obligatory h/t to good friend and fellow blogger Tan Ho’s now page for my inspiration"
+  },
+  {
+    "objectID": "now2024-01-29.html#what-is-the-now",
+    "href": "now2024-01-29.html#what-is-the-now",
     "title": "The Now",
     "section": "",
     "text": "So this standing section will be a general reflection on what’s going in my life right now. Generally it’s a practice in mindfulness . For more information, this is a good explainer.Obligatory h/t to good friend and fellow blogger Tan Ho’s now page for my inspiration"
@@ -40,12 +54,5 @@
     "title": "The Now",
     "section": "Other Things I’m Doing",
     "text": "Other Things I’m Doing\n\nPlanning Golf Trips\n I’d love to get back to the American Soccer Golf Tour this year. Current candidates are as follows, suggestions welcome:Find me on social media and feel free to DM course suggestions!\nCharleston, SC - Kiawah Island is a must for any golfer, and a Charleston Battery match seems like a must for any soccer historian.\nRaleigh, NC - Tobacco Road is a must and I have to see if the NC Courage are a bigger draw than NCFC.\nLouisville, KY - Renting hickory clubs and traveling back in time, then heading to a Lou City or Racing Louisville match. By the way, Racing Louisville’s houndstooth kit is absolute 🔥🔥🔥.\nAtlanta, GA - The soccer nerd vibes at a packed ATL United Game have been on the list since I saw the Footie Mob for the first time. Course suggestions are welcome.\n\n\nCurrent Mood: 😖▶️🙃\nAnnoyed, but confident. I’ve been dealing with some early-year emergencies lately (nothing I’ll get into here). However, I’m pretty proud of my response so far. Upon reflection, I want to be able to handle my stress while being able to function clearly. And if I can’t, I want to be able to confront what or who is bothering me head-on, while remaining composed and affable.\nTrying to be patient as possible: the problems remain stubborn and will likely stay problems for the next few months.\nThere will always be problems. I can control what I can control, and I can control my response to the things I can’t control."
-  },
-  {
-    "objectID": "posts.html",
-    "href": "posts.html",
-    "title": "Matt Writes it Out",
-    "section": "",
-    "text": "This section will deposit some of the ideas I have regarding my other passion, soccer analytics. Unless they’re categorized as stories, consider most of this stuff as in-progress updates.\nEventually I’ll pin an idea board here to organize everything.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRound Review: Langston, 27 Jan\n\n\n\ngolf\n\n\n\n\n\n\n\nMatt Barger\n\n\nJan 29, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIntroducing SQD: Does Finishing Quality Matter?\n\n\n\nsoccer\n\n\nanalytics\n\n\nmethodology\n\n\n\n\n\n\n\nMatt Barger\n\n\nJan 20, 2024\n\n\n\n\n\n\n\n\nNo matching items"
   }
 ]
