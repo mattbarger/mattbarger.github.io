@@ -23,6 +23,7 @@ format:
     theme: 
       dark: darkly
       light: flatly
+    include-in-header: fonts.html
     css: styles.css
     typography:
       base: Inter
