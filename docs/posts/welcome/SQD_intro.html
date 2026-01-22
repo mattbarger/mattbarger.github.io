@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.1.189">
+<meta name="generator" content="quarto-1.2.280">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -145,30 +145,32 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../posts.html">Posts</a>
+    <a class="nav-link" href="../../posts.html">
+ <span class="menu-text">Posts</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../now.html">Now</a>
+    <a class="nav-link" href="../../now.qmd">
+ <span class="menu-text">Now</span></a>
   </li>  
   <li class="nav-item compact">
     <a class="nav-link" href="https://github.com/mattbarger"><i class="bi bi-github" role="img">
 </i> 
- </a>
+ <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
     <a class="nav-link" href="https://twitter.com/MBarger13"><i class="bi bi-twitter" role="img">
 </i> 
- </a>
+ <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
     <a class="nav-link" href="https://www.linkedin.com/in/matthewcbarger/"><i class="bi bi-linkedin" role="img">
 </i> 
- </a>
+ <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
     <a class="nav-link" href="https://www.instagram.com/matty.barg/"><i class="bi bi-instagram" role="img">
 </i> 
- </a>
+ <span class="menu-text"></span></a>
   </li>  
 </ul>
               <div id="quarto-search" class="" title="Search"></div>
@@ -205,6 +207,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
         <p class="date">January 20, 2024</p>
       </div>
     </div>
+    
       
     </div>
     
@@ -228,13 +231,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><u><strong>Expected Goals (xG)</strong></u> measures a shot’s probability of scoring based on the <strong><em>various factors leading up to the shot</em></strong>. </li>
 <li><u><strong>Post-Shot Expected Goals (PSxG)</strong></u> measures a shot’s probability of scoring given the <strong><em>position of the shot in the goalmouth</em></strong>. </li>
 </ul>
-<div class="no-row-height column-margin column-container"><span class="aside">xG = <em>how good was the setup?</em></span><span class="aside">PSxG = <em>how good was the finish?</em></span></div><p><u>xG is a headline statistic</u> used to measure the both the attacking quality and the defensive quality of teams. You can find xG on most league tables on major statistics sites.</p>
+<div class="no-row-height column-margin column-container"><span class="">xG = <em>how good was the setup?</em></span><span class="">PSxG = <em>how good was the finish?</em></span></div><p><u>xG is a headline statistic</u> used to measure the both the attacking quality and the defensive quality of teams. You can find xG on most league tables on major statistics sites.</p>
 <p>On the other hand, <u>PSxG is a backpage afterthought</u>. It has been proven useful to identify well-performing goalkeepers, but that relegates it to the backpage of FBREF.</p>
 <p>We can do better than this.</p>
 </section>
 <section id="research-question-can-we-use-xg-and-psxg-to-isolate-attacking-tendencies" class="level1 page-columns page-full">
 <h1>Research Question: Can We Use xG and PSxG to isolate attacking tendencies?</h1>
-<div class="page-columns page-full"><p>Let’s grab some data. We’re grabbing every shot from every game over the last three full seasons as well as the in-progress 2023/24 season from FBREF. </p><div class="no-row-height column-margin column-container"><span class="aside"><span class="emoji" data-emoji="100">💯</span> <span class="emoji" data-emoji="raised_hands">🙌</span> <span class="emoji" data-emoji="fire">🔥</span> to Jase Zivkovic and Tony El-Habr for their updates on <a href="https://github.com/JaseZiv/worldfootballR">the <code>worldfootballR</code> package</a>. They’ve condensed literal days-long data scraping process into about 30 seconds of compiling. Fantastic work, fellas!</span></div></div>
+<div class="page-columns page-full"><p>Let’s grab some data. We’re grabbing every shot from every game over the last three full seasons as well as the in-progress 2023/24 season from FBREF. </p><div class="no-row-height column-margin column-container"><span class=""><span class="emoji" data-emoji="100">💯</span> <span class="emoji" data-emoji="raised_hands">🙌</span> <span class="emoji" data-emoji="fire">🔥</span> to Jase Zivkovic and Tony El-Habr for their updates on <a href="https://github.com/JaseZiv/worldfootballR">the <code>worldfootballR</code> package</a>. They’ve condensed literal days-long data scraping process into about 30 seconds of compiling. Fantastic work, fellas!</span></div></div>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(worldfootballR)</span>
@@ -293,7 +296,24 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     button.classList.add('code-copy-button-checked');
     var currentTitle = button.getAttribute("title");
     button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
     setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
       button.setAttribute("title", currentTitle);
       button.classList.remove('code-copy-button-checked');
     }, 1000);
@@ -329,24 +349,42 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return note.innerHTML;
     });
   }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
   var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
   for (var i=0; i<bibliorefs.length; i++) {
     const ref = bibliorefs[i];
-    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
-    tippyHover(ref, function() {
-      var popup = window.document.createElement('div');
-      cites.forEach(function(cite) {
-        var citeDiv = window.document.createElement('div');
-        citeDiv.classList.add('hanging-indent');
-        citeDiv.classList.add('csl-entry');
-        var biblioDiv = window.document.getElementById('ref-' + cite);
-        if (biblioDiv) {
-          citeDiv.innerHTML = biblioDiv.innerHTML;
-        }
-        popup.appendChild(citeDiv);
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
       });
-      return popup.innerHTML;
-    });
+    }
   }
 });
 </script>

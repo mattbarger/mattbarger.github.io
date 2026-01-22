@@ -10,14 +10,11 @@ website:
         file: posts.qmd
       - text: "Now"
         file: now.qmd
-      - icon: github
+      - text: '{{< fa brands github >}}'
         href: https://github.com/mattbarger
-      - icon: twitter
-        href: https://twitter.com/MBarger13
-      - icon: linkedin
-        href: https://www.linkedin.com/in/matthewcbarger/
-      - icon: instagram
-        href: https://www.instagram.com/matty.barg/
+      - text: '{{< fa brands bluesky >}}'
+        href: https://bsky.app/profile/mattbarger.bsky.social
+      
         
 format:
   html:
