@@ -1,0 +1,12 @@
+typography:
+  fonts:
+  - family: Inter
+    source: google
+    weights: [400, 500, 600, 700]
+  - family: Fira Mono
+    source: google
+    weights: [400, 700]
+
+base: Inter
+headings: Inter
+monospace: Fira Mono

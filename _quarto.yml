@@ -2,6 +2,8 @@ project:
   type: website
   output-dir: docs
 
+brand: _brand.yml
+
 website:
   title: "Matt Barger"
   navbar:
@@ -14,14 +16,17 @@ website:
         href: https://github.com/mattbarger
       - text: '{{< fa brands bluesky >}}'
         href: https://bsky.app/profile/mattbarger.bsky.social
-      
-        
+
+
 format:
   html:
     theme: 
-      light: flatly
       dark: darkly
-    css: styles.css
+      light: flatly
+    typography:
+      base: Inter
+      headings: Inter
+      monospace: Space Mono
 
 editor: visual
 
