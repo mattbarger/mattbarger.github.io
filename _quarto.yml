@@ -20,9 +20,12 @@ website:
 format:
   html:
     theme: 
-      dark: darkly
-      light: flatly
-    sass: styles.scss
+      dark: 
+      - darkly
+      - styles.scss
+      light: 
+      - flatly
+      - styles.scss
     include-in-header: fonts.html
     
 
