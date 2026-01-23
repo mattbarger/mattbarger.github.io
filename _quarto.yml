@@ -20,11 +20,7 @@ website:
 format:
   html:
     theme: 
-      dark: 
       - darkly
-      - styles.scss
-      light: 
-      - flatly
       - styles.scss
     include-in-header: fonts.html
     
