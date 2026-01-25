@@ -2,7 +2,6 @@
 // Import Google fonts
 @import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-// custom.scss — override Bootstrap variables
-$font-family-sans-serif: 'Inter', system-ui, -apple-system, sans-serif !default;
-$headings-font-family: 'Inter', system-ui, -apple-system, sans-serif !default;
-$font-family-monospace: 'Space Mono', monospace !default;
+// Define the font families as Sass variables
+$font-family-sans-serif: "Inter" !important;
+$font-family-monospace: "Fira Mono" !important;
