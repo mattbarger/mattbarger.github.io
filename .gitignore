@@ -1,4 +1,6 @@
 /.quarto/
 .Rproj.user
+.Renviron.sh
+.RData
 
 **/*.quarto_ipynb

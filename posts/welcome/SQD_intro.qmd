@@ -42,4 +42,4 @@ shots_top5 <- load_fb_match_shooting(
 
 Let's isolate the shooting from a single match. In this case
 
-``` {r}
+\`\`\` {r}
