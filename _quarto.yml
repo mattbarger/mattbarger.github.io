@@ -20,7 +20,7 @@ website:
 format:
   html:
     theme: 
-      - minty
+      - sandstone
       - styles.scss
     include-in-header: fonts.html
     
