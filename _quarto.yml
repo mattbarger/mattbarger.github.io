@@ -20,7 +20,7 @@ website:
 format:
   html:
     theme: 
-      - sandstone
+      - darkly
       - styles.scss
     include-in-header: fonts.html
     
